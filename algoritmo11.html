@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+
+         /*10) Una persona desea invertir su dinero en un banco, el cual le otorga un 2% de interés. 
+             * Cual será la cantidad de dinero que esta persona tendrá al cabo de un año si la ganancia de cada mes es reinvertida?.*/
+
+		                
+		var nl,n1=0,n;
+
+            	nl = window.prompt("Ingrese el número limite");
+		n1 = window.prompt("Ingrese el número 1");
+            
+                for (var i = 2; i <= nl; i++)
+                {
+                    n = window.prompt("Ingrese el número " + i);
+
+                    if (n < n1)
+                    {
+                        n1 = n;
+                    }
+
+                }
+
+                console.log("El numero menor es: " + n1);
+                 
+         
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

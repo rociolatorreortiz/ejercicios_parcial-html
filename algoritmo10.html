@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+
+         /*10) Una persona desea invertir su dinero en un banco, el cual le otorga un 2% de interés. 
+             * Cual será la cantidad de dinero que esta persona tendrá al cabo de un año si la ganancia de cada mes es reinvertida?.*/
+
+		                 
+
+ 	var valor,valor1,g=0,va;
+            valor = window.prompt("Ingrese el valor del dinero que dejara en el banco");
+
+           valor1 = valor;
+
+           console.log("La ganancia del dinero que esta persona tendra al cabo de:");
+
+            for (var i = 1; i <= 12; i++)
+            {
+                g = valor1 + (valor * 2 / 100);
+                valor = g + valor;
+
+                console.log("Mes " + i + " es = " + g );                 
+               
+            }
+
+            va = valor1 + g;
+
+           console.log("La cantidad de dinero que esta persona tendra al cabo de un año es: " + va);
+            
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

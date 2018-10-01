@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+               /*6) Que lea tres números diferentes y determine el numero medio del conjunto de los tres números 
+             * (el numero medio es aquel numero que no es ni mayor, ni menor).
+*/
+ 
+            var n1,n2,n3;
+            n1 = window.prompt("Ingrese el numero 1");
+            n2 = window.prompt("Ingrese el numero 2");
+            n3 = window.prompt("Ingrese el numero 3");
+
+            if ((n1 > n2 && n1 < n3) || (n1 < n2 && n1 > n3))
+            {
+                console.log("El número medio es:" + n1);
+                       
+            }
+            else if ((n2 > n1 && n2 < n3) || (n2 < n1 && n2 > n3))
+            {
+                console.log("El número medio es:" + n2);
+            }
+            else if ((n3 > n1 && n3 < n2) || (n3 < n1 && n3 > n2))
+            {
+                console.log("El número medio es:" + n3);
+
+            }
+
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

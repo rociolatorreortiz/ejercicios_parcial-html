@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+
+/*# 2- Una persona enferma, que pesa 70 kg, se encuentra en reposo y desea saber cuantas calorías consume su cuerpo durante todo 
+            el tiempo que realice una misma actividad.Las actividades que tiene permitido realizar son únicamente dormir o estar sentado en
+           reposo.Los datos que tiene son que estando dormido consume 1.08 calorías por minuto y estando sentado en reposo consume 1.66
+           calorías por minuto.*/
+
+
+     var opc, minutos, calorias = 0;
+            opc = window.prompt("Ingrese el tipo de actividad 1 si es dormir y 2 si es levantarse");
+            minutos = window.prompt("Ingrese el tiempo que estubo realizando esta actividad en minutos");
+
+
+            if (opc == 1)
+            {
+                calorias = 1.08 * minutos;
+                console.log("Las calorias quemadas fueron de: "+ calorias + " calorías.");
+
+            }
+            else if (opc == 2)
+
+            {
+                calorias = 1.66 * minutos;
+                console.log("Las calorias quemadas fueron de: "+ calorias + " calorías.");
+
+            }
+    
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

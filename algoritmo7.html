@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+
+        /*7) Una institución educativa estableció un programa para estimular a los alumnos con buen rendimiento académico y que consiste en lo siguiente:
+	Si el promedio es de 9.5 o mas y el alumno es de preparatoria, entonces este podrá cursar 55 unidades y se le hará un 25% de descuento.
+	Si el promedio es mayor o igual a 9 pero menor que 9.5 y el alumno es de preparatoria, entonces este podrá cursar 50 unidades y se le hará un 10% de descuento.
+	Si el promedio es mayor que 7 y menor que 9 y el alumno es de preparatoria, este podrá cursar 50 unidades y no tendrá ningún descuento.
+	Si el promedio es de 7 o menor,  el numero de materias reprobadas es de 0 a 3 y el alumno es de preparatoria, entonces podrá cursar 45 unidades y no tendrá descuento.
+	Si el promedio es de 7 o menor, el numero de materias reprobadas es de 4 o mas y el alumno es de preparatoria, entonces podrá cursar 40 unidades y no tendrá ningún descuento.
+	Si el promedio es mayor o igual a 9.5 y el alumno es de profesional, entonces podrá cursar 55 unidades y se le hará un 20% de descuento.
+	Si el promedio es menor de 9.5 y el alumno es de profesional, entonces podrá cursar 55 unidades y no tendrá descuento.
+
+	Obtener el total que tendrá que pagar un alumno si la colegiatura para alumnos de profesional es de $300 por cada cinco unidades y para alumnos de preparatoria 
+    es de $180 por cada cinco unidades.
+*/
+            var opc,m, prom,p;
+            opc = window.prompt("Ingrese 1 si es alumno de preparatoria o 2 si es alumno profesional");
+            prom = window.prompt("Ingrese su promedio final de materias");
+
+
+
+            if (opc == 1)
+            {
+               
+                if (prom >= 9.5)
+                {
+                    p = (180 * 55 / 5) - (180 * 55 / 5 * 25 / 100);
+                    console.log("El pago del alumno de preparatoria es de:" + p );                 
+                }
+                else if (prom >= 9 && prom < 9.5)
+                {
+                    p = (180 * 50 / 5) - (180 * 50 / 5 * 10 / 100);
+                    console.log("El pago del alumno de preparatoria es de:" + p );                
+                }
+                else if (prom > 7 && prom < 9)
+                {
+                    p = (180 * 50 / 5);
+                    console.log("El pago del alumno de preparatoria es de:" + p );               
+                }
+               
+                else if (prom <= 7)
+                {
+                    m = window.prompt("Ingrese numero de materias reprobadas");
+                    if (m >= 0 && m <= 3)
+                    {
+                        p = (180 * 45 / 5);
+                        console.log("El pago del alumno de preparatoria es de:" + p );                
+                    }
+                    else if(m >=4)
+                    {
+                        p = (180 * 40 / 5);
+                        console.log("El pago del alumno de preparatoria es de:" + p ); 
+                    }
+                }
+            }
+            else if (opc == 2)
+            {
+                if (prom >= 9.5)
+                {
+                    p = (300 * 55 / 5) - (300* 55 / 5 * 20 / 100);
+                    console.log("El pago del alumno de profesional es de:" + p );                 
+                }
+                else
+                {
+                    p = (300 * 55 / 5);
+                    console.log("El pago del alumno de profesional es de:" + p );                    
+                }
+            }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

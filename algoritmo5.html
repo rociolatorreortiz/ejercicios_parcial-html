@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+                /*#5 Una persona se encuentra con un problema de comprar un automóvil o un terreno, 
+              los cuales cuestan exactamente lo mismo. Sabe que mientras el automóvil se devalúa, 
+              con el terreno sucede lo contrario. Esta persona comprara el automóvil si al cabo de tres años la devaluación de este 
+              no es mayor que la mitad del incremento del valor del terreno. Ayúdale a esta persona a determinar si debe o no comprar el automóvil
+*/
+           
+           var valor, daut, iter, caut, cter;
+            valor = window.prompt("Ingrese el valor del automóvil que es el mismo del terreno");
+                   
+            daut = valor * 10 / 100;
+            iter = valor * 30 / 100;
+            caut = valor - daut;
+            cter = valor + iter;
+
+            if (daut * 3 < iter * 3 / 2)
+            {
+                console.log("Es mejor comprar el automovil por que el valor a 3 años será de "+ caut);
+            }
+            else
+            {
+                console.log("Es mejor comprar el terreno por que el valora 3 años será de "+ cter);
+            }
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>l>ml>
